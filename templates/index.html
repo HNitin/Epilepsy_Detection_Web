@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>EPILEPSY DETECTION SYSTEM</title>
+    <style>
+    .upload-section 
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    } </style>
+
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/pngwing.com.png') }}">
+            </div>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+        <div class="right-nav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big">
+                    EPILEPSY DETECTION SYSTEM
+                </p>
+                <p class="text-small">Epilepsy is a neurological disorder characterized by recurrent seizures. Seizures
+                    are abnormal, excessive, and synchronous electrical activity in the brain, which can lead to a wide
+                    range of symptoms depending on the area of the brain affected. These symptoms can vary from brief
+                    lapses of attention or muscle jerks to severe convulsions and loss of consciousness.</p>
+                <div class="mid-part">
+                    <form method="POST" enctype="multipart/form-data" action="/">
+                        <h2 id="head">Upload Test File</h2>
+		<div class="upload-section">
+                        	<input type="file" name="test_file" id="choose">
+                        	<br><br>
+                        	<button type="submit" class="btn btn-dark">Upload</button>
+		</div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="secondhalf">
+                <img src="{{ url_for('static', filename='img/fire-ga244ed21f_1280.jpg') }}">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="form">
+            <input type="text" name="" id="name" placeholder="Enter your name">
+            <input type="text" name="" id="Age" placeholder="Enter your Age">
+            <input type="text" name="" id="Email Address" placeholder="Enter your Email Address">
+            <input type="text" name="" id="Email Address" placeholder="Enter your Phone Number">
+            <textarea name="text" id="text" cols="50" rows="15" placeholder="Tell More About Your-Self"
+                class="moreabout"></textarea>
+        </div>
+        <button class="btn btn-dark">
+            Submit
+        </button>
+        <footer class="background">
+            <p class="text-footer">
+                 Project by:<br>
+                Nitin Hadpe, Rushikesh Wankar, Sayali Sonawane, Kshitija Nimbhorkar<br>
+                Copyright &copy; 2023 - All rights Reserved
+            </p>
+        </footer>
+    </section>
+</body>
+
+</html>
